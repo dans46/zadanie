@@ -1,2 +1,1 @@
-# zadanie
 Tuna opisem zadanie
