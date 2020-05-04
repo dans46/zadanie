@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  	<link rel="stylesheet" href="css/style.css">
+
+    <title>Bart zadanie</title>
+  </head>
+  <body>
+  
+    <div class="bg-img" id="bg" style=""></div>
+
+    <main>
+      
+      <div class="container-xl">
+        <div class="desc">
+          <h1>Fotogaléria</h1>
+          <p>Kategórie</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card" id="pr">
+                <img class="card-img-top" src="img/priroda.jpg" alt="Príroda">
+                <div class="card-body">
+                  <p class="card-text">Príroda</p>
+                  <div class="hidden">
+                    <p>0 fotografií</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card" id="arch">
+                <img class="card-img-top" src="img/architecture.jpeg" alt="dom">
+                <div class="card-body">
+                  <div class="card-text">
+                    <p>Architektúra</p>
+                    <div class="hidden">
+                      <p>6 fotografií</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card" id="peop">
+                <img class="card-img-top" src="img/people.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Ľuďia</p>
+                  <div class="hidden">
+                    <p>0 fotografií</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card" id="food">
+                <img class="card-img-top" src="img/food.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Jedlo</p>
+                  <div class="hidden">
+                    <p>0 fotografií</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card" id="cars">
+                <img class="card-img-top" src="img/cars.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Autá</p>
+                  <div class="hidden">
+                    <p>0 fotografií</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div onclick="alert();" class="card">
+                <div  class="add">
+                <svg 
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="40px" height="40px">
+                    <path fill-rule="evenodd"  fill="rgb(170, 170, 170)"
+                     d="M22.000,10.000 L18.000,10.000 L18.000,18.000 L10.000,18.000 L10.000,22.000 L18.000,22.000 L18.000,30.000 L22.000,30.000 L22.000,22.000 L30.000,22.000 L30.000,18.000 L22.000,18.000 L22.000,10.000 ZM20.000,-0.000 C8.960,-0.000 -0.000,8.960 -0.000,20.000 C-0.000,31.040 8.960,40.000 20.000,40.000 C31.040,40.000 40.000,31.040 40.000,20.000 C40.000,8.960 31.040,-0.000 20.000,-0.000 ZM20.000,36.000 C11.180,36.000 4.000,28.820 4.000,20.000 C4.000,11.180 11.180,4.000 20.000,4.000 C28.820,4.000 36.000,11.180 36.000,20.000 C36.000,28.820 28.820,36.000 20.000,36.000 Z"/>
+                  </svg> 
+                  <p>Pridať kategóriu</p>
+                </div>
+              </div>
+            </div>
+        </div>  
+         <p class="copyright">webdesign bart.sk</p> 
+      </div>   
+    </main>
+  </body>
+</html>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="js/script2.js"></script>
