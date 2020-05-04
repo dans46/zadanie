@@ -1,1 +1,2 @@
 # zadanie
+Tuna opisem zadanie
