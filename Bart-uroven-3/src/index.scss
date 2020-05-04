@@ -1,0 +1,371 @@
+
+
+$text-color:#666666;
+$detail-color: #999999;
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+  text-transform: uppercase;
+
+}
+
+h1{
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+
+input:focus{
+  outline: none;
+}
+
+a{
+	color:$text-color;
+
+	&:hover{
+		color:$text-color;
+		text-decoration: none;
+	}
+}
+
+.inline{
+	display: inline-block;
+	margin-left: 0.8em;
+}
+
+.add{
+  margin: 0;
+  width: 12em;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  
+  p{
+    padding-top: 1em;
+  }
+}
+
+.bg-img{
+  height: 340px;
+  width:100%;
+  background: url(img/priroda.jpg) center center / cover;
+  filter: blur(2px);
+}
+
+.bg-img2{
+  height: 340px;
+  width:100%;
+  background: url(img/architecture.jpeg) center center / cover;
+  filter: brightness(40%); 
+}
+
+.container-xl{
+  margin-top: -15em;
+  position: relative;  
+}
+
+.desc{
+  color:white;
+  border-bottom: 1px solid white;
+  margin: 0 15px;
+}
+
+.card-body{
+  padding: 0.8em;
+  overflow: hidden;
+}
+
+.row{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.copyright{
+  padding-left: 15px;
+  margin: 1em 0;
+  text-transform: none;
+  color: $detail-color;
+}
+
+.card{
+  margin-top: 1.5em;
+  height: 13em;
+
+  p{
+    margin-bottom:0.2em;
+  }
+
+  &:hover{
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 10px $text-color;
+    display: block !important;
+    cursor: pointer;
+
+  }
+}
+
+.card:hover .hidden{
+  display: block;
+}
+
+.card:hover .card-img-top{
+  height: 9em; 
+}
+
+.card:hover .img-box{
+  height: 9em; 
+}
+
+
+.card-img-top{
+    width: 100%; 
+    height: 10em; 
+    object-fit: cover; 
+}
+
+.hidden{
+  display: none;
+  font-size: 0.7em;
+}
+
+#modalContainer {
+  background-color:rgba(0, 0, 0, 0.8);
+  position:absolute;
+  top:0;
+  width:100%;
+  height:100%;
+  left:0px;
+  z-index:10000;
+}
+
+
+#alertBox, .alertAdd {
+  position: relative;
+  width: 40%;
+  height: 10em;
+  padding-bottom: 2em;
+  margin-top: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.3em;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  bottom: -30%;
+  margin: auto;
+
+  h1 {
+    position:absolute;
+    left: 5%;
+    top: 10%;
+    margin: 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+
+  }
+
+  p {
+    padding-left:5px;
+    padding-top:20px;
+    text-align:center;
+    vertical-align:middle;
+    text-transform:uppercase;
+  }
+
+  #closeBtn {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    padding: 0.5em 1em;
+    bottom: 20%;
+    right: 5%;
+    border: 0 none;
+    width: 7em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    background-color: #33cc99;
+    border-radius: 0.6em;
+    text-decoration: none;
+    outline: 0 !important;
+  }
+
+}
+
+.alertAdd{
+	height: 22em;
+	top: 30%;
+
+	.close-btn{
+		top: -20%;
+	}
+
+	#closeBtn{
+		bottom: 5% !important;
+	}
+}
+
+.add-icon{
+	left: 46%;
+    position: relative;
+    padding-top: 3em;
+}
+
+.area{
+	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='13' ry='13' stroke='%23333' stroke-width='1' stroke-dasharray='10' stroke-dashoffset='4' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 0.2em;
+  position: relative;
+  left: 5%;
+  width: 92%;
+  top: 24%;
+}
+
+
+.img-box{
+  width: 100%;
+  height: 10em;
+  object-fit: cover;
+}
+
+.text-1{
+	padding-top: 0.8em !important;
+	margin:0;
+	height: auto !important;
+}
+
+.text-sm{
+	font-size: 0.9em;
+	text-transform: none !important;
+	padding: 0 !important;
+    margin: 0;
+}
+
+.text-border{
+	border: 1px solid;
+    display: inline-block;
+    position: relative;
+    left: 35%;
+    padding: 0.3em 0.9em !important;
+}
+
+
+#input{
+  position: absolute;
+  left: 5%;
+  bottom: 15%;
+  width: 90%;
+  border: none;
+  border-bottom: 3px solid rgba(0,0,0,.125);
+  padding-bottom:0.8em;
+}
+
+::-webkit-input-placeholder { 
+  color: $detail-color;
+  text-transform:uppercase;
+}
+::-moz-placeholder { 
+  color: $detail-color;
+  text-transform:uppercase;
+}
+:-ms-input-placeholder { 
+  color: $detail-color;
+  text-transform:uppercase;
+}
+:-moz-placeholder { 
+  color: $detail-color;
+  text-transform:uppercase;
+}
+
+.close-btn{
+  display: inline-block;
+  position: absolute;
+  top: -40%;
+  right: 0%;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+
+  p{
+  	display: inline-block;
+  	font-size: 0.8em;
+  }
+
+}
+
+@media (max-width: 992px) 
+{
+  #alertBox, .alertAdd {
+    width:80%;
+   
+}
+  
+}
+
+@media (max-width: 768px) 
+{
+  #modalContainer {
+  	height: 125%;
+  }
+}
+
+
+@media (max-width: 720px) 
+{
+
+  #alertBox {
+      width:95%;
+      height: 13em;
+  }
+
+
+
+  .alertAdd{
+  	width:95%;
+    height: 22em;
+  }
+
+ #input{
+    bottom: 35%;
+  }
+
+  .close{
+    top: -35%;
+  }
+
+   #closeBtn {
+    bottom: 5%;
+    right: 35%;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 576px){
+  .card-img-top{
+    height:15em;
+  }
+
+  #modalContainer {
+    height: 270%;
+  }
+
+  #alertBox{
+  	bottom: -80%;
+  }
+
+  .alertAdd {
+  	bottom: -70% !important; 
+  }
+
+  .card:hover .card-img-top{
+  height: 13em; 
+    }
+
+  .card{
+    height:18em;
+  }
+}
+
+
+
