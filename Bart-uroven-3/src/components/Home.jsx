@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import plus from '../img/plus.svg'
 import AddCategory from '../components/AddCategory'
 
 function show(){
